@@ -16,3 +16,6 @@ namePrefix: dev-
 labels:
   - pairs:
       environment: dev
+
+patches:
+  - path: ingress-patch.yaml
