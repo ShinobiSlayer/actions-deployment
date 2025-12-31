@@ -3,7 +3,7 @@ kind: Kustomization
 
 namespace: actions-dev
 
-bases:
+resources:
   - ../../base
 
 images:
@@ -13,5 +13,6 @@ images:
 
 namePrefix: dev-
 
-commonLabels:
-  environment: dev
+labels:
+  - pairs:
+      environment: dev

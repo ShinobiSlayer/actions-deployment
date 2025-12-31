@@ -3,8 +3,9 @@ kind: Kustomization
 
 namespace: actions-prod
 
-bases:
+resources:
   - ../../base
+  - namespace.yaml
 
 images:
   - name: shinobislayer/actions
@@ -13,12 +14,10 @@ images:
 
 namePrefix: prod-
 
-commonLabels:
-  environment: prod
+labels:
+  - pairs:
+      environment: prod
 
 replicas:
   - name: actions-app
     count: 3
-
-resources:
-  - namespace.yaml

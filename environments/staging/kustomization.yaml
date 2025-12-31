@@ -3,7 +3,7 @@ kind: Kustomization
 
 namespace: actions-staging
 
-bases:
+resources:
   - ../../base
 
 images:
@@ -13,8 +13,9 @@ images:
 
 namePrefix: staging-
 
-commonLabels:
-  environment: staging
+labels:
+  - pairs:
+      environment: staging
 
 replicas:
   - name: actions-app
