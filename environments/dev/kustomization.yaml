@@ -9,7 +9,7 @@ bases:
 images:
   - name: shinobislayer/actions
     newName: shinobislayer/actions
-    newTag: latest
+    newTag: 2025.12.020-MAIN
 
 namePrefix: dev-
 
