@@ -9,7 +9,7 @@ resources:
 images:
   - name: shinobislayer/actions
     newName: shinobislayer/actions
-    newTag: 2025.12.022-MAIN
+    newTag: 2025.12.023-MAIN
 
 namePrefix: dev-
 
