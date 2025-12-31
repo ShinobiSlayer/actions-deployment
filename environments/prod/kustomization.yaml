@@ -21,3 +21,6 @@ labels:
 replicas:
   - name: actions-app
     count: 3
+
+patches:
+  - path: ingress-patch.yaml
